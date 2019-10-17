@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta http-equiv="refresh" content="30"> -->
+ <link rel="stylesheet" type="text/css" href="styles.css">
+ <style type="text/css">
+   /*Card*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+ 
+}
+img{
+  width: 100%;
+  transition: all .5s;
+}
+section{
+  padding: 70px 0;
+  margin-top: 50px;
+  background: rgba(116, 185, 255,0.09);
+  text-align: center;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin: 30px 15px 0px 15px;
+}
+header{
+  width: 70%;
+  margin: 0 auto;
+}
+header h1{
+  margin: 0;
+  font-size: 50px;
+  color: rgba(52, 73, 94,1.0);
+  font-weight: 500;
+}
+.singleBlog{
+  position: relative;
+  overflow: hidden;
+  max-height: 580px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover{
+  box-shadow: 0 2px 13px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover img{
+  transform: scale(1.1);
+  transition: all .4s;
+}
+.blogContent{
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%);
+  transition: all .5s;
+}
+.singleBlog:hover .blogContent{
+  bottom: 0;
+  transition: all .5s;
+}
+ 
+.blogContent h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.blogContent h3 span{
+  display: block;
+  font-size: 60%;
+  margin-top: 5px;
+  font-weight: 600;
+  color: rgba(52, 73, 94,1.0)
+}
+ 
+.blogContent a{
+  font-size: 14px;
+  font-weight: 500;
+}
+.blogContent .btn{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.blogContent .btn:hover{
+  background: rgba(52, 152, 219,1.0);
+  transition: all .5s;
+  text-decoration: none;
+}
+.blogContent a:hover{
+  text-decoration: underline;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+@media (max-width:992px) {
+  main{
+    grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  }
+}
+@media (max-width:767px) {
+  main{
+    grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  }
+  header{
+    width: 95%;
+  }
+  .blogContent{
+    bottom: 0;
+  }
+}
+@media (max-width:500px) {
+ 
+    main{
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+ </style>
+ 
+</head>
+<body>
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio id="player" autoplay loop>
+  <source src="Its time lofi calm chill vaporwave study Chillhop.mp3" type="audio/mp3">
+</audio> 
+ 
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a  class="logo">LetsLukis</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="getstarted.html" class="nav-links">Get Started</a>
+            </li>
+            <li>
+                <a href="news.html" class="nav-links active">News</a>
+            </li>
+            <li>
+                <a href="tutor.html" class="nav-links">Tutorials</a>
+            </li>
+            <li>
+                <a href="feedback.html" class="nav-links">Feedback</a>
+            </li>
+        </ul>
+    </nav>
+ 
+
+  <img style="width:100%; height: 300px;" src="newsbg.jpg">
+   <div class="centered"><h1 style="padding-bottom: 250px;color: white; ">News !</h1></div>
+</div>
+ 
+<div class="row">
+  <div class="leftcolumn" style="width: 100%">
+ <section>
+    <div class="container">
+      <header>
+        <h1>Latest News</h1>
+      </header>
+
+      <main>
+        <div class="singleBlog">
+          <img src="corel-painter-2020-hp - Copy.jpg" alt="">
+          <div class="blogContent">
+            <h3>Corel Painter 2020 review</h3>
+            <p>Corel Painter 2020 finally tames the digital painting software's famously messy UI, and adds much-needed performance improvements through GPU support.  </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="hp-sketching-for-inktober-2018.jpg" alt="inktober">
+          <div class="blogContent">
+            <h3>What is Inktober 2019 and how do I take part?</h3>
+            <p>Everything you need to know about Inktober, which aims to help you get better at drawing through a series of themed challenges. </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="hp-best-design-conferences-2019.jpg" alt="bestdesign">
+          <div class="blogContent">
+            <h3>The Best Art and Design Conferences of 2019</h3>
+            <p>This year find inspiration, fun, skills and the chance to meet some like-minded people at these festivals across subjects from concept art and illustration to branding, and from graphic and UX design to animation and VFX.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="battle-angel-alita-iron-city-caylah-hp.jpg" alt="alita">
+          <div class="blogContent">
+            <h3>Designing a near-future Kowloon Walled City for Alita: Battle Angel</h3>
+            <p>Production designer Caylah Eddleblute tells us about the architecture, colour, texture and lighting of Alita's Iron City.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="spider-verse-oscar-hp.jpg" alt="spiderman">
+          <div class="blogContent">
+            <h3>The artistic approaches that helped Spider-Man: Into the Spider-Verse pick up this year's Animation Oscar</h3>
+            <p>This year's animation Oscar winner combines art styles that are as diverse as the multiple universes its heroes and villains come from. Here we take a peek inside their creation.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="gaomon-pd1560-review-hp - Copy.jpg" alt="gaomon">
+          <div class="blogContent">
+            <h3>Gaomon PD1560 review – the budget tablet display that's so much less expensive than the Wacom Cintiq</h3>
+            <p>Illustrator Ricardo Bessa reviews a Cintiq rival that's £200/$200 than Wacom's cheapest tablet – but is it a case of getting what you oay for?  </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>        
+        <div class="singleBlog">
+          <img src="etherborn-hp.jpg" alt="indie">
+          <div class="blogContent">
+            <h3>Dreamlike indie game Etherborn draws inspiration from Monument Valley - and famous artists</h3>
+            <p>Classic 20th century artists such as Escher, Mondrian and de Chirico have influenced a surreal new platformer from studio Altered Matter. </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="apple_mac_mini_2018_lifestyle_2.jpg" alt="applemac">
+          <div class="blogContent">
+            <h3>Apple Mac Mini review </h3>
+            <p>The Mac mini has much to recommend it for graphic and UX designers who won’t mind its lack of 3D power.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="singleBlog">
+          <img src="hp-priya-mistry-2018.jpg" alt="priya">
+          <div class="blogContent">
+            <h3>Priya Mistry's wonderful city portraits could finally decide the world's greatest capital</h3>
+            <p>The UK artist tells a tale of two cities through a series of beautiful illustrations..</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  </div>
+ 
+</div>
+
+<div class="footer">
+  <h4 style="text-align: center;" >&copy Web Produced By Syafiq Shamil</h4>
+</div>
+</body>
+</html>

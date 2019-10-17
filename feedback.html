@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta http-equiv="refresh" content="30"> -->
+ <link rel="stylesheet" type="text/css" href="styles.css">
+  <style type="text/css">
+    table, td, th {
+      border: 1px solid black;
+      border-collapse: collapse;
+                  }
+  </style>
+
+  <script type="text/javascript">
+    function showfun()
+    {
+      alert("Thank you for reviewing this blog!");
+    }
+  </script>
+</head>
+<body onsubmit="return showfun()">
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+ <audio autoplay >
+  <source src="Famous Dex - Japan (Lofi Remix).mp3" type="audio/mp3">
+</audio>
+
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a class="logo">LetsLukis</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="getstarted.html" class="nav-links">Get Started</a>
+            </li>
+            <li>
+                <a href="news.html" class="nav-links">News</a>
+            </li>
+            <li>
+                <a href="tutor.html" class="nav-links">Tutorials</a>
+            </li>
+            <li>
+                <a href="feedback.html" class="nav-links active">Feedback</a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="row" style="text-align:center;">
+  <div class="leftcolumn" style="width: 100%">
+       <div class="card">
+     <fieldset>
+      <legend><b>What do you think about this blog?</b></legend>
+      <img src="feedb.jpg" style="width: 800px;height: 400px" alt="feedback bg">
+
+    <form>
+ <table align="CENTER">
+  <caption><b>FEEDBACK FORM</b></caption><br><br><br>
+   <tr>
+     <td>Name:</td>
+     <td style="text-align: left"><input style="width: 50%" placeholder="Enter your name " type="text" name="nama"></td>
+   </tr>
+   <tr >
+     <td>Email:</td>
+     <td style="text-align: left"><input  style="width: 50%" placeholder="Enter your email " type="email" name="email"></td>
+   </tr>
+   <tr>
+    <td>Comment:</td>
+     <td colspan="5"><textarea cols="60" rows="8" placeholder="Enter your comments here~!"></textarea></td>
+   </tr>
+   <TR>
+
+    <td colspan="2">  <input type="submit" value="Submit Review!"name="submit"></td>
+   </TR>
+ </table>
+</form>
+</fieldset>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+  <h4 style="text-align: center;" >&copy Web Produced By Syafiq Shamil</h4>
+</div> 
+
+</body>
+</html>
